@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action="">
+        <p>Formulaire</p>
+        <fieldset>
+            <legend> Coordonnées </legend>
+        <label>Prenom : <input type="text"/></label><br>
+        <br><label>Nom : <input type="text"/></label><br>
+        <br><label for="age">
+            Age:
+            <input type="number" id="age" name="age" min="0" max="120" step="1" placeholder="Enter your age" required>
+          </label><br>
+          <br><label>sexe :</label>
+          <label for="masculin">
+            Masculin
+            <input type="radio" id="masculin" name="sex" value="M" required>
+          </label>
+          <label for="feminin">
+            Feminin
+            <input type="radio" id="feminin" name="sex" value="F" required>
+          </label><br>
+          <br><label>Adresse mail : <input type="email"/></label><br>
+          <br><label>Adresse postale : <input type="text"/></label><br>
+          <br><label>code postal: <input type="text" maxlength="5" placeholder="Entrez un code postal"/></label><br>
+          <br><label>Ville : <input type="text"/></label><br>
+        </fieldset>
+
+          <br><label>Métier exercé</label><br>
+          <select name="Métier exercé">
+            <option>Restauration</option>
+            <option>Enseignement</option>
+            <option>Informatique</option>
+          </select><br>
+
+          <br><label for="nationalite">Nationalité :</label><br>
+          <select id="nationalite" name="nationalite" required>
+            <option value="fr" selected>Française</option>
+            <option value="us">Américaine</option>
+            <option value="ca">Canadienne</option>
+            <option value="de">Allemande</option>
+            <option value="es">Espagnole</option>
+            <option value="it">Italienne</option>
+          </select><br>
+
+          <br><label for="dob">Date de naissance :</label><br>
+  <input type="date" id="dob" name="dob" max="2006-12-31" required><br>
+
+  <br><label for="pays de naissance">Pays de naissance :</label><br>
+          <select id="pays de naissance" name="pays de naissance" required>
+            <option value="fr" selected>France</option>
+            <option value="us">Amérique</option>
+            <option value="ca">Canada</option>
+            <option value="de">Allemagne</option>
+            <option value="es">Espagne</option>
+            <option value="it">Italie</option>
+          </select><br>
+
+          <br><label for="ssn">Numéro de Sécurité Sociale :</label>
+          <input type="text" id="ssn" name="ssn" placeholder="Entrez un numéro à 15 chiffres" required maxlength="15" pattern="\d{15}"><br>
+
+          <br><label>Numéro de passeport : <input type="text"></label><br>
+
+          <br><label>Date de délivrance du passeport : <input type="date"></label><br>
+          
+
+          <br><label>Date de validité du passeport : <input type="date"></label><br>
+
+          
+
+    </form>
+</body>
+</html>
